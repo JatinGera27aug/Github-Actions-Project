@@ -22,6 +22,7 @@ jobs:
       run: mvn compile
       
   security-checking:
+    needs: compile    # will run after compile stage ends
 
     runs-on: ubuntu-latest
 
